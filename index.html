@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Altura — Travel, slower and further</title>
+<meta name="description" content="Altura is a boutique travel agency crafting tailor-made journeys to the world's most remarkable places.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="Altura home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 26 12 8l6 10 4-6 8 14Z" fill="currentColor"/><circle cx="24" cy="7" r="3" fill="var(--accent)"/></svg>
+    <span>Altura</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#destinations">Destinations</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#packages">Packages</a>
+    <a href="#how">How it works</a>
+    <a href="#stories">Stories</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="#contact" class="btn btn-light">Plan a trip <span class="btn-ico">↗</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <a href="#destinations">Destinations</a>
+  <a href="#experiences">Experiences</a>
+  <a href="#packages">Packages</a>
+  <a href="#how">How it works</a>
+  <a href="#stories">Stories</a>
+  <a href="#contact" class="btn btn-accent">Plan a trip ↗</a>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-frame">
+    <!-- photo, giant word, then the same photo again masked so the word sinks into the scenery -->
+    <img class="hero-bg" src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=2400&q=80" alt="Two travelers watching hot-air balloons rise over the rock valleys of Cappadocia at sunrise" fetchpriority="high">
+    <p class="hero-word" aria-hidden="true"><span class="ch">w</span><span class="ch">a</span><span class="ch">n</span><span class="ch">d</span><span class="ch">e</span><span class="ch">r</span></p>
+    <img class="hero-bg hero-bg-front" src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=2400&q=80" alt="">
+    <div class="hero-shade"></div>
+
+    <div class="hero-center">
+      <h1 class="hero-title">Travel further, travel slower</h1>
+      <p class="hero-sub">Tailor-made journeys to 120+ countries</p>
+      <a href="#destinations" class="pill-pair light">
+        <span class="pill">Explore destinations</span><span class="pill-circle">↗</span>
+      </a>
+    </div>
+
+    <div class="hero-lower">
+      <div class="hero-step reveal">
+        <h2 class="hero-step-title"><span>Step into</span> <span>the trip you've always pictured</span></h2>
+      </div>
+      <p class="hero-copy reveal">From balloon-filled skies over Cappadocia to quiet ryokans in Kyoto, we design every journey around the way you actually like to travel — handpicked stays, local guides who know everyone, and nothing left to chance.</p>
+
+      <p class="hero-access reveal">And get access to</p>
+      <ul class="hero-perks">
+        <li class="reveal">Handpicked stays</li>
+        <li class="reveal">Expert local guides</li>
+        <li class="is-solid reveal">24/7 support on the road</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Kyoto</span><i></i><span>Patagonia</span><i></i><span>Santorini</span><i></i><span>Bali</span><i></i><span>Machu Picchu</span><i></i><span>Serengeti</span><i></i><span>Iceland</span><i></i><span>Maldives</span><i></i><span>Venice</span><i></i><span>Ha Long Bay</span><i></i>
+    <span>Kyoto</span><i></i><span>Patagonia</span><i></i><span>Santorini</span><i></i><span>Bali</span><i></i><span>Machu Picchu</span><i></i><span>Serengeti</span><i></i><span>Iceland</span><i></i><span>Maldives</span><i></i><span>Venice</span><i></i><span>Ha Long Bay</span><i></i>
+  </div>
+</div>
+
+<!-- ============ INTRO + STATS ============ -->
+<section class="section intro wrap">
+  <div class="intro-grid">
+    <img class="intro-img reveal" src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=75" alt="Hikers walking along a mountain ridge">
+    <div>
+      <p class="eyebrow">Who we are</p>
+      <p class="statement reveal">We design journeys for travelers who want more than a checklist — <span class="muted">handpicked stays, local guides who know everyone, and itineraries shaped around the way you actually like to travel.</span></p>
+      <a href="#how" class="link-arrow">Read our story <span>→</span></a>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat reveal">
+      <p class="stat-num"><span data-count="48">0</span>K+</p>
+      <p class="stat-label">Happy travelers</p>
+    </div>
+    <div class="stat stat-accent reveal">
+      <p class="stat-num"><span data-count="120">0</span>+</p>
+      <p class="stat-label">Countries covered</p>
+    </div>
+    <div class="stat reveal">
+      <p class="stat-num"><span data-count="4.9" data-decimals="1">0</span>/5</p>
+      <p class="stat-label">Average trip rating</p>
+    </div>
+    <div class="stat reveal">
+      <p class="stat-num">24/7</p>
+      <p class="stat-label">Support on the road</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESTINATIONS ============ -->
+<section class="section dest" id="destinations">
+  <div class="wrap section-head">
+    <div>
+      <p class="eyebrow">Top destinations</p>
+      <h2 class="h2">Places worth the <em class="serif">long flight</em></h2>
+    </div>
+    <div class="dest-controls">
+      <div class="chips" role="tablist" aria-label="Filter destinations">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="beach">Beach</button>
+        <button class="chip" data-filter="mountain">Mountains</button>
+        <button class="chip" data-filter="culture">Culture</button>
+        <button class="chip" data-filter="wildlife">Wildlife</button>
+      </div>
+      <div class="arrows">
+        <button class="round-btn dark" id="prev" aria-label="Previous">←</button>
+        <button class="round-btn dark" id="next" aria-label="Next">→</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="rail" id="rail">
+    <article class="dcard" data-cat="culture">
+      <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=75" alt="Pagoda in Kyoto at dusk" loading="lazy">
+      <span class="dnum">01</span>
+      <button class="heart" aria-label="Save Kyoto">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Japan · Culture</p>
+        <h3>Kyoto</h3>
+        <div class="drow"><span>★ 4.9 <small>(2.1k)</small></span><span>from <strong>$2,450</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="beach">
+      <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=75" alt="White houses of Santorini above the sea" loading="lazy">
+      <span class="dnum">02</span>
+      <button class="heart" aria-label="Save Santorini">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Greece · Beach</p>
+        <h3>Santorini</h3>
+        <div class="drow"><span>★ 4.8 <small>(3.4k)</small></span><span>from <strong>$1,980</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="mountain">
+      <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=75" alt="Machu Picchu ruins under green peaks" loading="lazy">
+      <span class="dnum">03</span>
+      <button class="heart" aria-label="Save Machu Picchu">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Peru · Mountains</p>
+        <h3>Machu Picchu</h3>
+        <div class="drow"><span>★ 4.9 <small>(1.8k)</small></span><span>from <strong>$2,890</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="wildlife">
+      <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=75" alt="Safari jeep on the savannah" loading="lazy">
+      <span class="dnum">04</span>
+      <button class="heart" aria-label="Save Serengeti">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Tanzania · Wildlife</p>
+        <h3>Serengeti</h3>
+        <div class="drow"><span>★ 5.0 <small>(940)</small></span><span>from <strong>$4,200</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="beach">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=75" alt="Temple gate in Bali" loading="lazy">
+      <span class="dnum">05</span>
+      <button class="heart" aria-label="Save Bali">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Indonesia · Beach</p>
+        <h3>Bali</h3>
+        <div class="drow"><span>★ 4.8 <small>(4.2k)</small></span><span>from <strong>$1,590</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="mountain">
+      <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=75" alt="Northern lights over Iceland" loading="lazy">
+      <span class="dnum">06</span>
+      <button class="heart" aria-label="Save Iceland">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Iceland · Mountains</p>
+        <h3>Iceland</h3>
+        <div class="drow"><span>★ 4.9 <small>(1.2k)</small></span><span>from <strong>$2,780</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="culture">
+      <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=75" alt="Canal in Venice with gondolas" loading="lazy">
+      <span class="dnum">07</span>
+      <button class="heart" aria-label="Save Venice">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Italy · Culture</p>
+        <h3>Venice</h3>
+        <div class="drow"><span>★ 4.7 <small>(2.9k)</small></span><span>from <strong>$1,750</strong></span></div>
+      </div>
+    </article>
+    <article class="dcard" data-cat="wildlife">
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=75" alt="Diver swimming over a coral reef" loading="lazy">
+      <span class="dnum">08</span>
+      <button class="heart" aria-label="Save Great Barrier Reef">♡</button>
+      <div class="dinfo">
+        <p class="dmeta">Australia · Wildlife</p>
+        <h3>Great Barrier Reef</h3>
+        <div class="drow"><span>★ 4.9 <small>(1.1k)</small></span><span>from <strong>$3,350</strong></span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCES ============ -->
+<section class="section exp wrap" id="experiences">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Choose your pace</p>
+      <h2 class="h2">The trip you've <em class="serif">always pictured</em></h2>
+    </div>
+    <p class="section-sub">Whether you want summits, sunsets or centuries-old streets, every journey starts with how you want to feel.</p>
+  </div>
+
+  <div class="panels" id="panels">
+    <article class="panel is-open" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=75" alt="Hiker overlooking a mountain lake" loading="lazy">
+      <div class="panel-body">
+        <span class="panel-idx">01</span>
+        <h3>Adventure</h3>
+        <p>Glacier hikes, desert crossings and multi-day treks with expert mountain guides.</p>
+        <a href="#packages" class="btn btn-light sm">Choose adventure →</a>
+      </div>
+    </article>
+    <article class="panel" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1200&q=75" alt="Overwater villas in the Maldives" loading="lazy">
+      <div class="panel-body">
+        <span class="panel-idx">02</span>
+        <h3>Relaxation</h3>
+        <p>Overwater villas, quiet islands and spa retreats where the only plan is slowing down.</p>
+        <a href="#packages" class="btn btn-light sm">Choose relaxation →</a>
+      </div>
+    </article>
+    <article class="panel" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=75" alt="Boats among the limestone islands of Ha Long Bay" loading="lazy">
+      <div class="panel-body">
+        <span class="panel-idx">03</span>
+        <h3>Culture</h3>
+        <p>Cook with locals, sleep in heritage houses and see cities through a resident's eyes.</p>
+        <a href="#packages" class="btn btn-light sm">Choose culture →</a>
+      </div>
+    </article>
+    <article class="panel" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=75" alt="Infinity pool at a luxury resort" loading="lazy">
+      <div class="panel-body">
+        <span class="panel-idx">04</span>
+        <h3>Luxury</h3>
+        <p>Private transfers, villa buyouts and once-in-a-lifetime access, arranged quietly.</p>
+        <a href="#packages" class="btn btn-light sm">Choose luxury →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section how" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow light">How it works</p>
+        <h2 class="h2">Booking made as easy <em class="serif">as 1-2-3</em></h2>
+      </div>
+      <p class="section-sub light">One conversation, one specialist, one itinerary — no endless tabs.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-num">01</span>
+        <h3>Tell us your dream</h3>
+        <p>Share where, when and how you like to travel in a 20-minute call with a destination specialist.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">02</span>
+        <h3>Get your itinerary</h3>
+        <p>Within 48 hours you receive a day-by-day plan with stays, guides and prices. Tweak it as much as you like.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">03</span>
+        <h3>Pack and go</h3>
+        <p>We book everything, send a travel app with your documents, and stay on call 24/7 while you're away.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="section pkgs wrap" id="packages">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Featured packages</p>
+      <h2 class="h2">Ready-made, <em class="serif">fully flexible</em></h2>
+    </div>
+    <a href="#contact" class="btn btn-dark">View all packages <span class="btn-ico">↗</span></a>
+  </div>
+
+  <div class="pkg-grid">
+    <article class="pkg reveal">
+      <div class="pkg-img">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=75" alt="Mountain peaks above clouds" loading="lazy">
+        <span class="badge">Bestseller</span>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-meta"><span>9 days</span><span>Small group</span><span>Chile & Argentina</span></div>
+        <h3>Patagonia Wild Trails</h3>
+        <ul class="incl"><li>Torres del Paine W-Trek</li><li>Glacier boat cruise</li><li>Boutique lodges</li></ul>
+        <div class="pkg-foot"><p><small>from</small> <strong>$3,890</strong><small>/person</small></p><a href="#contact" class="round-btn accent" aria-label="Book Patagonia Wild Trails">↗</a></div>
+      </div>
+    </article>
+    <article class="pkg reveal">
+      <div class="pkg-img">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=75" alt="Turquoise sea and white sand beach" loading="lazy">
+        <span class="badge">New</span>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-meta"><span>7 days</span><span>Couples</span><span>Maldives</span></div>
+        <h3>Island Escape</h3>
+        <ul class="incl"><li>Overwater villa</li><li>Sunset dhoni cruise</li><li>Seaplane transfers</li></ul>
+        <div class="pkg-foot"><p><small>from</small> <strong>$4,450</strong><small>/person</small></p><a href="#contact" class="round-btn accent" aria-label="Book Island Escape">↗</a></div>
+      </div>
+    </article>
+    <article class="pkg reveal">
+      <div class="pkg-img">
+        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=75" alt="Traditional Japanese street in Kyoto" loading="lazy">
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-meta"><span>12 days</span><span>Private</span><span>Japan</span></div>
+        <h3>Japan, Slowly</h3>
+        <ul class="incl"><li>Tokyo, Hakone & Kyoto</li><li>Ryokan with onsen</li><li>Rail pass included</li></ul>
+        <div class="pkg-foot"><p><small>from</small> <strong>$5,120</strong><small>/person</small></p><a href="#contact" class="round-btn accent" aria-label="Book Japan, Slowly">↗</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ BIG BAND ============ -->
+<section class="band">
+  <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2200&q=75" alt="Sunlight over a misty valley" loading="lazy" class="band-img">
+  <div class="band-inner wrap">
+    <p class="band-title">Explore it <em class="serif">yourself.</em></p>
+    <p class="band-copy">The world is wide, and most of it is still waiting for you. Let's find your corner of it.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section stories wrap" id="stories">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Traveler stories</p>
+      <h2 class="h2">Told by people <em class="serif">who went</em></h2>
+    </div>
+    <div class="rating-sum"><strong>4.9</strong><span>★★★★★</span><small>from 6,800+ reviews</small></div>
+  </div>
+
+  <div class="quotes">
+    <figure class="quote reveal">
+      <blockquote>“Every single detail was thought through. Our guide in Kyoto took us to a family-run tea house we would never have found on our own.”</blockquote>
+      <figcaption><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=70" alt="" loading="lazy"><span><strong>Emma Carter</strong><small>Japan, Slowly · 2026</small></span></figcaption>
+    </figure>
+    <figure class="quote quote-accent reveal">
+      <blockquote>“Our flight got cancelled in Punta Arenas at midnight. Altura had us rebooked and in a hotel before we'd even left the gate.”</blockquote>
+      <figcaption><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=70" alt="" loading="lazy"><span><strong>Daniel Okafor</strong><small>Patagonia Wild Trails · 2026</small></span></figcaption>
+    </figure>
+    <figure class="quote reveal">
+      <blockquote>“Honeymoon perfection. The overwater villa, the seaplane, the surprise dinner on the sandbank — it felt like a film.”</blockquote>
+      <figcaption><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=70" alt="" loading="lazy"><span><strong>Sofia Marín</strong><small>Island Escape · 2025</small></span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CTA / NEWSLETTER ============ -->
+<section class="cta wrap" id="contact">
+  <div class="cta-box">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=75" alt="" loading="lazy">
+    <div class="cta-inner">
+      <h2 class="h2">Your next story <em class="serif">starts here.</em></h2>
+      <p>Get hand-picked trip ideas, early-bird deals and travel tips once a month. No spam, ever.</p>
+      <form class="news" onsubmit="event.preventDefault(); this.classList.add('sent'); this.querySelector('button').textContent='Subscribed ✓';">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Your email address" required>
+        <button class="btn btn-accent" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="logo light">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 26 12 8l6 10 4-6 8 14Z" fill="currentColor"/><circle cx="24" cy="7" r="3" fill="var(--accent)"/></svg>
+          <span>Altura</span>
+        </a>
+        <p>Tailor-made journeys for curious travelers. Member of ATTA & ABTA.</p>
+      </div>
+      <div><p class="foot-h">Explore</p><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#packages">Packages</a><a href="#stories">Stories</a></div>
+      <div><p class="foot-h">Company</p><a href="#">About us</a><a href="#">Careers</a><a href="#">Sustainability</a><a href="#">Press</a></div>
+      <div><p class="foot-h">Contact</p><a href="tel:+15551234567">+1 (555) 123-4567</a><a href="mailto:hello@altura.travel">hello@altura.travel</a><p class="addr">88 Harbor Street, San Francisco, CA</p></div>
+    </div>
+    <p class="foot-word" aria-hidden="true">Altura</p>
+    <div class="foot-bottom">
+      <span>© 2026 Altura Travel. All rights reserved.</span>
+      <span class="foot-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+<script src="scroll.js"></script>
+</body>
+</html>
